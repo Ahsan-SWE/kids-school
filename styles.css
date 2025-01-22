@@ -85,7 +85,12 @@
   max-width: 1440px;
   justify-content: space-around;
 }
-
+.marquee {
+  background: #ff6b00;
+  color: white;
+  padding: 0.5rem 0;
+  max-width: 100%;
+}
 .hero-banner {
   margin: 0 auto;
   max-width: 1440px;
@@ -404,6 +409,46 @@
   font-weight: bold;
   margin-bottom: 60px;
 }
+.kids-school {
+  width: 206.109px;
+  color: #fff;
+  font-family: Quicksand;
+  font-size: 42.143px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 39.509px; /* 93.75% */
+}
+.logo-cls {
+  width: 82.902px;
+  height: 81.652px;
+  flex-shrink: 0;
+}
+
+.footer-section {
+  display: flex;
+  margin: 0 auto;
+  /* justify-content: space-between; */
+  justify-content: space-around;
+  max-width: 1440px;
+  background-color: #01acfd;
+  padding-top: 124px;
+  padding-bottom: 174px;
+}
+.abt {
+  color: white;
+}
+
+.txt {
+  color: white;
+}
+
+.logo-text {
+  display: flex;
+  align-items: center;
+}
+.footer-des {
+  width: 399.02px;
+}
 
 /* media quary part */
 
@@ -413,7 +458,14 @@
   .header-btn {
     display: none;
   }
-
+  .footer-section {
+    padding-left: 24px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .footer-des {
+    width: 356px;
+  }
   .nav-bar > logo {
     margin-left: 1px;
     padding-left: 1px;
@@ -434,7 +486,11 @@
     width: 134px;
     height: 30px;
   }
-
+  .nav-bar {
+    margin: 0 auto;
+    max-width: 1440px;
+    justify-content: space-between;
+  }
   .hero-div {
     display: flex;
     flex-direction: column-reverse;
