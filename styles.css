@@ -263,9 +263,6 @@
   margin-bottom: 60px;
 }
 
-.view-btn {
-}
-
 .std-text {
   color: #000;
   text-align: center;
@@ -289,18 +286,17 @@
   padding-left: 38px;
 }
 .div-btn {
-  color: #fff;
-  font-family: Raleway;
-  font-size: 15.339px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 28.761px; /* 187.5% */
+  width: 174.51px;
+  height: 47.934px;
+  padding: 14.38px 18.876px 15.339px 19.174px;
+  justify-content: center;
+  align-items: center;
+  border: none;
   border-radius: 47.934px;
   background: #3cd8e8;
-  padding: 14.38px 18.876px 15.339px 19.174px;
 }
 .story-img-1 {
-  display: 50%;
+  display: 60%;
 }
 .cart-1 {
   border-radius: 16px;
@@ -308,7 +304,6 @@
   width: 540.267px;
   height: 630.518px;
   flex-shrink: 0;
-  border: 2px solid red;
 }
 .story-des {
   max-width: 433.057px;
@@ -331,17 +326,18 @@
   padding: 9.587px 18.876px 10.545px 19.174px;
   justify-content: center;
   align-items: center;
+  border: none;
 }
 .div-4 {
+  border-radius: 16px;
+  background: #fff;
   display: flex;
   width: 290.693px;
 
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
-  border-radius: 16px;
-  background: #fff;
-  border: 2px solid red;
+  gap: 19.174px;
 }
 .find-out {
   padding-left: 38px;
@@ -362,31 +358,53 @@
   padding: 9.587px 18.876px 10.545px 19.174px;
   justify-content: center;
   align-items: center;
+  border: none;
 }
 .div-btn,
 .div-btn-2,
 .div-btn-2-1 {
   margin-left: 38px;
-  margin-top: -20px;
+  margin-top: -33px;
 }
 
 .div-4-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
+  max-width: 750px;
 }
 .story {
   max-width: 1440px;
   margin: 0 auto;
+  background-image: url(./assets/bg.png);
+
+  background: linear-gradient(
+    to top,
+    rgba(254, 163, 1, 0.3),
+    rgba(255, 255, 255, 0.3)
+  );
 }
 .div-2-grid {
   display: flex;
   gap: 20px;
   justify-content: center;
 }
-
-.view-btn {
+.stories-btn {
+  margin-top: 80px;
+  text-align: center;
 }
+
+.thirdly-btn {
+  background-color: black;
+  color: white;
+  padding: 10px 60px;
+  border-radius: 12px;
+  border: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 60px;
+}
+
 /* media quary part */
 
 @media screen and (max-width: 576px) {
@@ -395,10 +413,28 @@
   .header-btn {
     display: none;
   }
+
   .nav-bar > logo {
     margin-left: 1px;
     padding-left: 1px;
   }
+  .stories-btn {
+    margin-top: 10px;
+    text-align: center;
+  }
+  .thirdly-btn {
+    background-color: black;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 12px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 60px;
+    width: 134px;
+    height: 30px;
+  }
+
   .hero-div {
     display: flex;
     flex-direction: column-reverse;
@@ -410,7 +446,60 @@
 
     max-width: 357px;
   }
-
+  .div-4 {
+    width: 173px;
+    height: 179px;
+  }
+  .div-4 > img {
+    max-width: 173px;
+    max-height: 110px;
+  }
+  /* .div-4 > div-btn-2 {
+    width: 103.909px;
+    height: 22.833px;
+    justify-content: center;
+    align-items: center;
+  } */
+  .div-btn-2 {
+    width: 103.909px;
+    height: 22.833px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: Raleway;
+    font-size: 7.133px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 17.125px; /* 187.5% */
+    text-transform: capitalize;
+  }
+  .div-btn-2-1 {
+    width: 103.909px;
+    height: 22.833px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: Raleway;
+    font-size: 7.133px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 17.125px; /* 187.5% */
+    text-transform: capitalize;
+  }
+  .find-out {
+    padding-left: 20px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+    color: #000;
+    font-family: Quicksand;
+    font-size: 9.133px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 17.125px; /* 187.5% */
+  }
+  .cart-1 {
+    display: none;
+  }
   .hero-title-div {
     width: 100%;
     justify-content: center;
@@ -457,5 +546,11 @@
   .div-direction {
     margin-top: 20px;
     margin-bottom: 20px;
+  }
+  .div-4-grid > .div-4 {
+    margin-bottom: 12px;
+  }
+  .div-4-grid {
+    margin-top: 20px;
   }
 }
